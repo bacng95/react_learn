@@ -1,0 +1,25 @@
+.avatar {
+
+    white-space: nowrap;
+    position: relative;
+    color: #fff;
+    display: inline-flex;
+    font-size: 1rem;
+    vertical-align: middle;
+    font-weight: 600;
+    
+    .avatar-status-online {
+        background-color: #28c76f;
+    }
+
+    [class*=avatar-status-] {
+        border-radius: 50%;
+        border: 1px solid #fff;
+
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
