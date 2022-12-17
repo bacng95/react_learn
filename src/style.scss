@@ -1,12 +1,47 @@
-$--bs-btn-bg: #ecf0f4;
+:root {
+    --bs-primary-rgb: 254, 52, 100;
+    --bs-primary-bg: #fe3464;
+    --color-blue: rgb(0, 101, 238);
+    --main-background: #f8fafc;
+
+    --bs-border-radius: 0.8rem;
+}
+
+.btn-primary {
+    --bs-btn-bg: rgb(var(--bs-primary-rgb));
+    --bs-btn-border-color: rgb(var(--bs-primary-rgb))
+}
+
 
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1140px;
+    }
+}
+
+
+body { --bs-body-font-family: 'Nunito Sans'; }
+
+a {
+    text-decoration: inherit;
+}
+
+.shadow {
+    box-shadow: 0 0rem 1rem rgb(0 0 0 / 8%) !important;
+}
+
+.flex-basis-0 {
+    flex-basis: 0%;
+}
 
 button:active,
+button:focus,
 input:active,
-input:focus {
+input:focus,
+.dropdown button {
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
@@ -24,4 +59,63 @@ input:focus {
 .popover {
     max-width: 400px;
     z-index: 9999;
+
+    &.shadow {
+        box-shadow: 0 0rem 1rem rgb(0 0 0 / 8%) !important;
+    }
+}
+
+
+.navbar-nav {
+    .nav-item {
+        button.actived {
+            background-color: var(--color-blue);
+            color: white;
+        }
+    }
+}
+
+
+html {
+    height: 100%;
+}
+
+body, #root, .App {
+    height: 100%;
+}
+
+#main, footer {
+    background-color: var(--main-background);
+}
+
+.text-blue {
+    color: var(--color-blue);
+}
+
+.text-overflow-lines-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.text-overflow-lines-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.novel-type-2 {
+    .novel-description {
+        line-height: 16px;
+    }
+}
+
+.fz-body {
+    font-size: .9375rem;
 }

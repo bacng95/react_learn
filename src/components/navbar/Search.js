@@ -22,16 +22,22 @@ export default (props) => {
     function formFocusHandle (evt) {
         setSearchButtonShow(true)
     }
+
     function formBlurHandle () {
         setSearchButtonShow(false)
     }
+
+    const {
+        className
+    } = props
 
 
     return (
         <form
         className={
-            classnames('search-form d-flex align-items-center border rounded-pill w-100 border-0', {
-                'search-form--focus': searchButtonShow
+            classnames('search-form d-flex align-items-center border rounded-pill w-100 border-0 flex-grow-1 flex-shrink-1 flex-basis-0', {
+                'search-form--focus': searchButtonShow,
+                [className]: className
             })
         }
         onFocus={formFocusHandle}
@@ -42,7 +48,7 @@ export default (props) => {
             
             <input
             className="form-control border-0 bg-transparent search-form__input"
-            placeholder='Tên sản phẩm, nhu cầu, hãng...'
+            placeholder='Tên truyện, tác giả, thể loại bla bla'
             />
             
             <button className={

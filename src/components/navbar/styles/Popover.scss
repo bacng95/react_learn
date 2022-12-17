@@ -1,0 +1,23 @@
+#accountPopover, #notificationPopover {
+    
+    border-radius: 20px;
+
+    &.popover-inner {
+        max-height: min(600px,100vh - 74px);
+    }
+
+    .popover-body {
+        width: 400px;
+        height: 500px;
+        padding: 0px;
+    }
+
+    .popover-header {
+        border-bottom: none;
+        border-radius: 20px;
+    }
+}
+
+.header-popover-auto {
+    border-radius: 20px;
+}

@@ -6,11 +6,11 @@ import NavbarLeft from "./NavbarLeft"
 
 export default () => {
     return (
-        <header className="border-bottom p-2">
+        <header className="shadow p-2">
             <div className="container">
                 <div className='d-flex w-100'>
                     <NavbarLeft/>
-                    <NavbarCenter/>
+                    {/* <NavbarCenter/> */}
                     <NavbarRight/>
                 </div>
             </div>

@@ -1,12 +1,11 @@
-// import logo from './logo.svg';
-// import './App.css';
-import ViewPage from './views/index';
+import { Suspense } from 'react';
+import Router from './router/Router'
 
 function App() {
 	return (
-		<div className="App">
-			<ViewPage/>
-		</div>
+		<Suspense fallback={null}>
+			<Router/>
+		</Suspense>
 	);
 }
 
