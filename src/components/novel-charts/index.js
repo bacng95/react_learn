@@ -1,7 +1,11 @@
 import classnames from 'classnames'
 
+import './style.scss'
+
 // ** Components import
 import Views from './Views'
+import Trend from './Trend'
+import Vote from './Vote'
 
 const NovelCharts = (props) => {
 
@@ -19,10 +23,10 @@ const NovelCharts = (props) => {
                     <Views/>
                 </div>
                 <div className='col-4'>
-                    <Views/>
+                    <Trend/>
                 </div>
                 <div className='col-4'>
-                    <Views/>
+                    <Vote/>
                 </div>
             </div>
         </div>

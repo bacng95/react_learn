@@ -15,7 +15,7 @@ const Views = (props) => {
             [className]: className
         })}>
             <div className="d-flex justify-content-between align-items-center">
-                <h2 className='h4 fw-bold'>Đọc nhiều tuần</h2>
+                <h2 className='h4 fw-bold'>Đề cử tuần</h2>
                 <a className='text-primary small' href='#'>Xem thêm</a>
             </div>
             <ul className='list-unstyled list-ranking m-0'>

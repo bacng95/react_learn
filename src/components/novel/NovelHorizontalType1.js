@@ -23,7 +23,7 @@ const NovelHorizontalType1 = (props) => {
         if (!view) return
         return (
             <div className=" small d-flex align-items-center text-success">
-                <Eye size={16} className="me-1"/> { view }
+                <Eye size={14} className="me-1"/> { view }
             </div>
         )
     }
