@@ -119,3 +119,129 @@ body, #root, .App {
 .fz-body {
     font-size: .9375rem;
 }
+
+.nh-thumb {
+
+    &.nh-thumb--210 {
+        width: 210px;
+    }
+
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    &>img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    &::before {
+        padding-top: 133.333333%;
+        content: "";
+        display: block;
+    }
+
+}
+
+.nh-avatar {
+    
+    position: relative;
+
+    &:before {
+        padding-top: 100%;
+        display: block;
+        content: "";
+    }
+
+    &.nh-avatar--90 {
+        width: 90px;
+    }
+
+
+    &>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+        margin: auto;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .level {
+        position: absolute;
+        bottom: -0.125rem;
+        line-height: 1.5;
+        padding: 0 0.75rem;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+}
+
+.nh-rating {
+    .nh-icon {
+        margin-right: 0.25rem;
+        font-size: .875rem;
+    }
+
+}
+
+@font-face {
+    font-family: nh-icon;
+    src: url(./assets/fonts/icon.eot);
+    src: url(./assets/fonts/icon.eot?#iefix) format("eot"),url(./assets/fonts/icon.woff2) format("woff2"),url(./assets/fonts/icon.woff) format("woff"),url(./assets/fonts/icon.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+.nh-icon {
+
+    display: inline-block;
+    font-family: nh-icon;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &.icon-star{
+        &:before {
+            content: "\EA1E";
+        }
+    }
+
+
+    .active {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #ffc000;
+        max-width: 100%;
+    }
+}

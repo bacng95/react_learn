@@ -22,7 +22,7 @@ const NovelHorizontalType2 = (props) => {
                         { desc }
                     </div>
                     <div>
-                        <a className='fw-bold text-primary' title={genre.name} href={genre.slug}>{ genre.name }</a>
+                        <span className='fw-bold text-primary' title={genre.name} href={genre.slug}>{ genre.name }</span>
                     </div>
                 </div>
             </a>

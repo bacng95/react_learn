@@ -1,5 +1,5 @@
 import classnames from 'classnames'
-
+import { Link } from 'react-router-dom'
 import { Eye } from 'react-feather'
 
 const NovelHorizontalType1 = (props) => {
@@ -9,13 +9,14 @@ const NovelHorizontalType1 = (props) => {
         title,
         view,
         thumbnail,
-        genre
+        genre,
+        id
     } = props
 
     const GenreRender = () => {
         if (!genre) return
         return (
-            <a className='fw-bold text-primary' title={genre.name} href={genre.slug}>{ genre.name }</a>
+            <span className='fw-bold text-primary' title={genre.name} href={genre.slug}>{ genre.name }</span>
         )
     }
 
@@ -28,13 +29,15 @@ const NovelHorizontalType1 = (props) => {
         )
     }
 
+
+
     return (
         <div
             className={classnames("d-flex align-items-center h-100", {
                 [className]: className
             })}
         >
-            <a href="#" className="bg-white p-2 w-100 rounded shadow h-100">
+            <Link to={'/truyen/'+id} className="bg-white p-2 w-100 rounded shadow h-100">
                 <div className='d-flex h-100 d-flex align-items-center '>
                     <div className='novel-thumbnail me-3 h-100'>
                         <img style={{ height: 60, borderRadius: 8 }} className='overflow-hidden' src={thumbnail} title={title}/>
@@ -50,7 +53,7 @@ const NovelHorizontalType1 = (props) => {
                     </div>
                     
                 </div>
-            </a>
+            </Link>
         </div>
     )
 

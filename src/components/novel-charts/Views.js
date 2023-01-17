@@ -50,115 +50,115 @@ const Views = (props) => {
                     </div>
                 </li>
 
-                <li class="item">
-                    <div class="index index-2">
-                        <i class="svg-icon icon-medal-2"></i>
+                <li className="item">
+                    <div className="index index-2">
+                        <i className="svg-icon icon-medal-2"></i>
                     </div>
-                    <div class="content media align-items-center py-1 d-flex">
-                        <div class="media-body py-2">
-                            <h2 class="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
-                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" class="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
+                    <div className="content media align-items-center py-1 d-flex">
+                        <div className="media-body py-2">
+                            <h2 className="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
+                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" className="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
                             </h2>
                         </div>
-                        <span class="text-secondary small">32,943</span>
+                        <span className="text-secondary small">32,943</span>
                     </div>
                 </li>
 
-                <li class="item">
-                    <div class="index index-2">
-                        <i class="svg-icon icon-medal-3"></i>
+                <li className="item">
+                    <div className="index index-2">
+                        <i className="svg-icon icon-medal-3"></i>
                     </div>
-                    <div class="content media align-items-center py-1 d-flex">
-                        <div class="media-body py-2">
-                            <h2 class="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
-                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" class="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
+                    <div className="content media align-items-center py-1 d-flex">
+                        <div className="media-body py-2">
+                            <h2 className="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
+                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" className="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
                             </h2>
                         </div>
-                        <span class="text-secondary small">32,943</span>
-                    </div>
-                </li>
-
-                <li class="item">
-                    <div class="index index-4"> 4 </div>
-                    <div class="content media align-items-center py-1 d-flex">
-                        <div class="media-body py-2">
-                            <h2 class="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
-                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" class="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
-                            </h2>
-                        </div>
-                        <span class="text-secondary small">32,943</span>
+                        <span className="text-secondary small">32,943</span>
                     </div>
                 </li>
 
-                <li class="item">
-                    <div class="index index-4"> 5 </div>
-                    <div class="content media align-items-center py-1 d-flex">
-                        <div class="media-body py-2">
-                            <h2 class="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
-                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" class="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
+                <li className="item">
+                    <div className="index index-4"> 4 </div>
+                    <div className="content media align-items-center py-1 d-flex">
+                        <div className="media-body py-2">
+                            <h2 className="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
+                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" className="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
                             </h2>
                         </div>
-                        <span class="text-secondary small">32,943</span>
+                        <span className="text-secondary small">32,943</span>
                     </div>
                 </li>
 
-                <li class="item">
-                    <div class="index index-4"> 5 </div>
-                    <div class="content media align-items-center py-1 d-flex">
-                        <div class="media-body py-2">
-                            <h2 class="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
-                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" class="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
+                <li className="item">
+                    <div className="index index-4"> 5 </div>
+                    <div className="content media align-items-center py-1 d-flex">
+                        <div className="media-body py-2">
+                            <h2 className="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
+                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" className="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
                             </h2>
                         </div>
-                        <span class="text-secondary small">32,943</span>
+                        <span className="text-secondary small">32,943</span>
                     </div>
                 </li>
 
-                <li class="item">
-                    <div class="index index-4"> 5 </div>
-                    <div class="content media align-items-center py-1 d-flex">
-                        <div class="media-body py-2">
-                            <h2 class="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
-                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" class="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
+                <li className="item">
+                    <div className="index index-4"> 5 </div>
+                    <div className="content media align-items-center py-1 d-flex">
+                        <div className="media-body py-2">
+                            <h2 className="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
+                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" className="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
                             </h2>
                         </div>
-                        <span class="text-secondary small">32,943</span>
+                        <span className="text-secondary small">32,943</span>
                     </div>
                 </li>
 
-                <li class="item">
-                    <div class="index index-4"> 5 </div>
-                    <div class="content media align-items-center py-1 d-flex">
-                        <div class="media-body py-2">
-                            <h2 class="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
-                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" class="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
+                <li className="item">
+                    <div className="index index-4"> 5 </div>
+                    <div className="content media align-items-center py-1 d-flex">
+                        <div className="media-body py-2">
+                            <h2 className="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
+                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" className="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
                             </h2>
                         </div>
-                        <span class="text-secondary small">32,943</span>
+                        <span className="text-secondary small">32,943</span>
                     </div>
                 </li>
 
-                <li class="item">
-                    <div class="index index-4"> 5 </div>
-                    <div class="content media align-items-center py-1 d-flex">
-                        <div class="media-body py-2">
-                            <h2 class="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
-                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" class="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
+                <li className="item">
+                    <div className="index index-4"> 5 </div>
+                    <div className="content media align-items-center py-1 d-flex">
+                        <div className="media-body py-2">
+                            <h2 className="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
+                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" className="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
                             </h2>
                         </div>
-                        <span class="text-secondary small">32,943</span>
+                        <span className="text-secondary small">32,943</span>
                     </div>
                 </li>
 
-                <li class="item">
-                    <div class="index index-4"> 5 </div>
-                    <div class="content media align-items-center py-1 d-flex">
-                        <div class="media-body py-2">
-                            <h2 class="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
-                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" class="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
+                <li className="item">
+                    <div className="index index-4"> 5 </div>
+                    <div className="content media align-items-center py-1 d-flex">
+                        <div className="media-body py-2">
+                            <h2 className="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
+                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" className="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
                             </h2>
                         </div>
-                        <span class="text-secondary small">32,943</span>
+                        <span className="text-secondary small">32,943</span>
+                    </div>
+                </li>
+
+                <li className="item">
+                    <div className="index index-4"> 5 </div>
+                    <div className="content media align-items-center py-1 d-flex">
+                        <div className="media-body py-2">
+                            <h2 className="m-0 fz-body font-weight-normal pe-3 text-overflow-lines-1">
+                                <a href="https://metruyencv.com/truyen/ta-la-tham-quan-cac-nang-lai-noi-ta-la-trung-than" className="d-block text-dark">Ta Là Tham Quan, Các Nàng Lại Nói Ta Là Trung Thần!</a>
+                            </h2>
+                        </div>
+                        <span className="text-secondary small">32,943</span>
                     </div>
                 </li>
             </ul>

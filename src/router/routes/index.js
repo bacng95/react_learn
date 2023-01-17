@@ -3,6 +3,7 @@ import { Fragment } from 'react'
 
 // ** Routes Imports
 import Home from './Home';
+import Truyen from './Truyen';
 
 // ** Route Components
 import PublicRoute from '@src/components/routes/PublicRoute';
@@ -32,7 +33,8 @@ const DefaultRoute = '/'
 
 // ** Merge Routes
 const Routes = [
-    ...Home
+    ...Home,
+    ...Truyen
 ]
 
 const getRouteMeta = route => {
