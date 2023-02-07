@@ -1,6 +1,15 @@
 
+// ** React Imports
+import { useEffect } from 'react'
+
 // ** Reactstrap import
 import { Container } from "reactstrap"
+
+// ** Store & Actions
+import { useDispatch } from 'react-redux'
+import {
+    getNovelRecommend
+} from './store'
 
 // ** Components import
 import Slider from '@src/components/slider'
@@ -9,11 +18,19 @@ import Recommend from "@src/components/recommend"
 import NewUpdate from "@src/components/new-updated"
 import NovelCharts from "@src/components/novel-charts"
 
+// ** Store Variables
+const dispatch = useDispatch()
+const store = useSelector(state => state.email)
 
 // Third paty import
 import classnames from 'classnames'
 
+
 const Home = () => {
+
+    useEffect(() => {
+        dispatch(getNovelRecommend())
+    })
 
     const hotNovel = [
         {

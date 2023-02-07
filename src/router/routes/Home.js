@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-const Home = lazy(() => import('@src/views/pages/Home'))
+const Home = lazy(() => import('@src/views/pages/home'))
 
 const HomeRoute = [
     {
