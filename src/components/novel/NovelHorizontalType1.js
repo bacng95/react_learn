@@ -6,25 +6,21 @@ const NovelHorizontalType1 = (props) => {
 
     const {
         className,
-        title,
-        view,
-        thumbnail,
-        genre,
-        id
+        novel
     } = props
 
     const GenreRender = () => {
-        if (!genre) return
+        if (!novel.category) return
         return (
-            <span className='fw-bold text-primary' title={genre.name} href={genre.slug}>{ genre.name }</span>
+            <span className='fw-bold text-primary' title={novel.category.title} href={novel.category.slug}>{ novel.category.title }</span>
         )
     }
 
     const ViewRender = () => {
-        if (!view) return
+        if (!novel.view) return
         return (
             <div className=" small d-flex align-items-center text-success">
-                <Eye size={14} className="me-1"/> { view }
+                <Eye size={14} className="me-1"/> { novel.view }
             </div>
         )
     }
@@ -37,14 +33,14 @@ const NovelHorizontalType1 = (props) => {
                 [className]: className
             })}
         >
-            <Link to={'/truyen/'+id} className="bg-white p-2 w-100 rounded shadow h-100">
+            <Link to={'/truyen/'+novel.slug} className="bg-white p-2 w-100 rounded shadow h-100">
                 <div className='d-flex h-100 d-flex align-items-center '>
                     <div className='novel-thumbnail me-3 h-100'>
-                        <img style={{ height: 60, borderRadius: 8 }} className='overflow-hidden' src={thumbnail} title={title}/>
+                        <img style={{ height: 60, borderRadius: 8 }} className='overflow-hidden' src={novel.thumbnail} title={novel.title}/>
                     </div>
                     <div className="novel-info w-100">
                         <h2 className="mb-1 h6 text-dark fw-bold">
-                            { title }
+                            { novel.title }
                         </h2>
                         <div className='d-flex align-items-center justify-content-between'>
                             <GenreRender/>

@@ -1,7 +1,7 @@
 // ** Reducers Imports
 
 import couter from './couter'
-import home from '@src/views/pages/home'
+import home from '@src/views/pages/home/store'
 
 const rootReduct = {
     couter,

@@ -12,10 +12,15 @@ export default class JwtService {
     subscribers = []
 
     constructor(jwtOverrideConfig) {
+
+        this.axiosIns = axios.create({
+            baseURL: 'http://localhost:3332'
+        })
+
         this.jwtConfig = { ...this.jwtConfig, ...jwtOverrideConfig }
 
         // ** Request Interceptor
-        axios.interceptors.request.use(
+        this.axiosIns.interceptors.request.use(
             config => {
                 // ** Get token from localStorage
                 const accessToken = this.getToken()
@@ -31,7 +36,7 @@ export default class JwtService {
         )
 
         // ** Add request/response interceptor
-        axios.interceptors.response.use(
+        this.axiosIns.interceptors.response.use(
             response => response,
             error => {
                 // ** const { config, response: { status } } = error
@@ -93,15 +98,15 @@ export default class JwtService {
     }
 
     login(...args) {
-        return axios.post(this.jwtConfig.loginEndpoint, ...args)
+        return this.axiosIns.post(this.jwtConfig.loginEndpoint, ...args)
     }
 
     register(...args) {
-        return axios.post(this.jwtConfig.registerEndpoint, ...args)
+        return this.axiosIns.post(this.jwtConfig.registerEndpoint, ...args)
     }
 
     refreshToken() {
-        return axios.post(this.jwtConfig.refreshEndpoint, {
+        return this.axiosIns.post(this.jwtConfig.refreshEndpoint, {
             refreshToken: this.getRefreshToken()
         })
     }

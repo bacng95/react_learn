@@ -5,94 +5,10 @@ import { arrayPagination } from '@src/utility/Utils'
 
 const Recommend = (props) => {
 
-    const { className } = props
-
-    const novels = [
-        {
-            id: 3432,
-            title: 'Người Tại Thần Quỷ, Nhục Thân Vô Hạn Thôi Diễn',
-            thumbnail: 'https://static.cdnno.com/poster/nguoi-tai-than-quy-nhuc-than-vo-han-thoi-dien/150.jpg',
-            desc: ' Xuyên qua đến thế giới Phàm Nhân Tu Tiên Truyện.Có được hiếm thấy Băng hệ dị linh căn."Bái nhập tông môn?"Cái kia còn cần nghĩ, tất nhiên là Yểm Nguyệt Tông a."Ma đạo xâm lấn?"Giấc mộng của ta, không phải liền là Hợp Hoan Tông thường ngày sao.------ -----------Main tu công pháp cần song tu nên có nhiều nữ.----------------- ',
-            author: {
-                name: 'Dược thiên sầu',
-                slug: '/author/duoc-thien-sau-3432'
-            },
-            genre: {
-                name: 'Tiêp hiệp',
-                slug: '/genre/tien-hiep-342'
-            }
-        },
-        {
-            id: 3432,
-            title: 'Người Tại Thần Quỷ, Nhục Thân Vô Hạn Thôi Diễn',
-            thumbnail: 'https://static.cdnno.com/poster/nguoi-tai-than-quy-nhuc-than-vo-han-thoi-dien/150.jpg',
-            desc: ' Xuyên qua đến thế giới Phàm Nhân Tu Tiên Truyện.Có được hiếm thấy Băng hệ dị linh căn."Bái nhập tông môn?"Cái kia còn cần nghĩ, tất nhiên là Yểm Nguyệt Tông a."Ma đạo xâm lấn?"Giấc mộng của ta, không phải liền là Hợp Hoan Tông thường ngày sao.------ -----------Main tu công pháp cần song tu nên có nhiều nữ.----------------- ',
-            author: {
-                name: 'Dược thiên sầu',
-                slug: '/author/duoc-thien-sau-3432'
-            },
-            genre: {
-                name: 'Tiêp hiệp',
-                slug: '/genre/tien-hiep-342'
-            }
-        },
-        {
-            id: 3432,
-            title: 'Người Tại Thần Quỷ, Nhục Thân Vô Hạn Thôi Diễn',
-            thumbnail: 'https://static.cdnno.com/poster/nguoi-tai-than-quy-nhuc-than-vo-han-thoi-dien/150.jpg',
-            desc: ' Xuyên qua đến thế giới Phàm Nhân Tu Tiên Truyện.Có được hiếm thấy Băng hệ dị linh căn."Bái nhập tông môn?"Cái kia còn cần nghĩ, tất nhiên là Yểm Nguyệt Tông a."Ma đạo xâm lấn?"Giấc mộng của ta, không phải liền là Hợp Hoan Tông thường ngày sao.------ -----------Main tu công pháp cần song tu nên có nhiều nữ.----------------- ',
-            author: {
-                name: 'Dược thiên sầu',
-                slug: '/author/duoc-thien-sau-3432'
-            },
-            genre: {
-                name: 'Tiêp hiệp',
-                slug: '/genre/tien-hiep-342'
-            }
-        },
-        {
-            id: 3432,
-            title: 'Người Tại Thần Quỷ, Nhục Thân Vô Hạn Thôi Diễn',
-            thumbnail: 'https://static.cdnno.com/poster/nguoi-tai-than-quy-nhuc-than-vo-han-thoi-dien/150.jpg',
-            desc: ' Xuyên qua đến thế giới Phàm Nhân Tu Tiên Truyện.Có được hiếm thấy Băng hệ dị linh căn."Bái nhập tông môn?"Cái kia còn cần nghĩ, tất nhiên là Yểm Nguyệt Tông a."Ma đạo xâm lấn?"Giấc mộng của ta, không phải liền là Hợp Hoan Tông thường ngày sao.------ -----------Main tu công pháp cần song tu nên có nhiều nữ.----------------- ',
-            author: {
-                name: 'Dược thiên sầu',
-                slug: '/author/duoc-thien-sau-3432'
-            },
-            genre: {
-                name: 'Tiêp hiệp',
-                slug: '/genre/tien-hiep-342'
-            }
-        },
-        {
-            id: 3432,
-            title: 'Người Tại Thần Quỷ, Nhục Thân Vô Hạn Thôi Diễn',
-            thumbnail: 'https://static.cdnno.com/poster/nguoi-tai-than-quy-nhuc-than-vo-han-thoi-dien/150.jpg',
-            desc: ' Xuyên qua đến thế giới Phàm Nhân Tu Tiên Truyện.Có được hiếm thấy Băng hệ dị linh căn."Bái nhập tông môn?"Cái kia còn cần nghĩ, tất nhiên là Yểm Nguyệt Tông a."Ma đạo xâm lấn?"Giấc mộng của ta, không phải liền là Hợp Hoan Tông thường ngày sao.------ -----------Main tu công pháp cần song tu nên có nhiều nữ.----------------- ',
-            author: {
-                name: 'Dược thiên sầu',
-                slug: '/author/duoc-thien-sau-3432'
-            },
-            genre: {
-                name: 'Tiêp hiệp',
-                slug: '/genre/tien-hiep-342'
-            }
-        },
-        {
-            id: 3432,
-            title: 'Người Tại Thần Quỷ, Nhục Thân Vô Hạn Thôi Diễn',
-            thumbnail: 'https://static.cdnno.com/poster/nguoi-tai-than-quy-nhuc-than-vo-han-thoi-dien/150.jpg',
-            desc: ' Xuyên qua đến thế giới Phàm Nhân Tu Tiên Truyện.Có được hiếm thấy Băng hệ dị linh căn."Bái nhập tông môn?"Cái kia còn cần nghĩ, tất nhiên là Yểm Nguyệt Tông a."Ma đạo xâm lấn?"Giấc mộng của ta, không phải liền là Hợp Hoan Tông thường ngày sao.------ -----------Main tu công pháp cần song tu nên có nhiều nữ.----------------- ',
-            author: {
-                name: 'Dược thiên sầu',
-                slug: '/author/duoc-thien-sau-3432'
-            },
-            genre: {
-                name: 'Tiêp hiệp',
-                slug: '/genre/tien-hiep-342'
-            }
-        },
-    ]
+    const {
+        className,
+        novels
+    } = props
 
 
     const NovelRender = () => {
@@ -103,11 +19,7 @@ const Recommend = (props) => {
                     key={index}
                 >
                     <NovelHorizontalType2
-                        thumbnail={el.thumbnail}
-                        title={el.title}
-                        author={el.author}
-                        genre={el.genre}
-                        desc={el.desc}
+                        novel={el}
                     />
                 </div>
             )

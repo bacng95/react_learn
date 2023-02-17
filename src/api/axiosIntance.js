@@ -1,9 +1,5 @@
 import JwtService from "./jwtService";
 
-export default function axiosIntance(overrideConfig) {
-    const axios = new JwtService(overrideConfig)
-
-    return {
-        axios
-    }
+export default function axiosIns () {
+    return new JwtService()
 }
